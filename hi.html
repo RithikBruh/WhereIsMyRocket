@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Searchable List</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background: #f4f4f4;
+    }
+
+    .search-box {
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        border: 1px solid #aaa;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    th {
+        background: #333;
+        color: white;
+        padding: 12px;
+        text-align: left;
+        position: sticky;
+        top: 0;
+    }
+
+    td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr:hover {
+        background: #f0f0f0;
+    }
+</style>
+</head>
+<body>
+
+<h2>Search Items</h2>
+
+<input type="text" id="search" class="search-box" placeholder="Search items...">
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Date Created</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+
+    <tbody id="itemList">
+        <tr>
+            <td>Project Alpha</td>
+            <td>2024-05-02</td>
+            <td>Active</td>
+        </tr>
+
+        <tr>
+            <td>Todo App</td>
+            <td>2024-11-10</td>
+            <td>Completed</td>
+        </tr>
+
+        <tr>
+            <td>Bank System</td>
+            <td>2025-01-01</td>
+            <td>In Progress</td>
+        </tr>
+
+        <tr>
+            <td>Gym Tracker</td>
+            <td>2025-01-22</td>
+            <td>Active</td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+const search = document.getElementById("search");
+const items = document.querySelectorAll("#itemList tr");
+
+search.addEventListener("keyup", function () {
+    let filter = search.value.toLowerCase();
+
+    items.forEach(row => {
+        let text = row.textContent.toLowerCase();
+        row.style.display = text.includes(filter) ? "" : "none";
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+body{
+    background-color : rgb(208, 217, 219) ;
+}
+
+.title {
+    display : flex ; 
+    justify-content: space-between;
+    align-items : center ;
+    margin-top: 0px;
+    background-color: rgb(205, 211, 211);
+    border-radius : 7px ;
+
+    position : sticky ;
+    top : 0px ;
+}
+
+
+.nasa-logo{
+    width: 70px;
+    height : 60px;
+}
+
+.spacex-logo{
+    width : 100px ; 
+    height : 70px ; 
+}
+
+.search-container{
+    margin-top : 5em;
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    gap : 10px ;
+}
+
+.search-bar {
+    height : 2em;
+    font-size : 1em;
+    border-radius :7px ;   
+}
+
+.search-button , .add-button{
+    border-radius: 7px ;
+    display : flex ;
+    justify-content: center;
+    border-width: 1px ;
+}
+.rockets-container {
+    display : flex ;
+    justify-content: center;
+    align-items : center ;
+    padding-top : 20px ;
+    padding-left : 10px ;
+}
+
+.rockets-table{
+    background-color : rgb(202, 200, 200) ;
+    font-size : 1.2em ; 
+    width : 100% ;
+    border-collapse: collapse;
+    border-radius: 8px ;
+    text-align: center;
+}
+
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background: #e1dada;
+}
+
+.table-head{
+    background-color : #333 ;
+    font-weight: 560;
+    color : white ;
+}
+
+.table-head:hover{
+    background-color: black;
+}
+
+.minus-button , .pencil-button ,.location-button{
+    width: 15px;
+    filter: brightness(80%) saturate(70%);
+}
+
+.minus-button:hover , .pencil-button:hover,.location-button:hover{
+    width : 17px ;
+    filter : brightness(90%) ;
+}
+
+.status {
+    color : rgb(5, 109, 5) ;
+    font-weight: 550;
+}

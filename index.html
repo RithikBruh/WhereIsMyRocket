@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Where Is My Rocket</title>
+</head>
+<body>
+    <div class = "title"> 
+        <img class = "nasa-logo" src = "imgs/nasa.png" >
+        <h1>Where is My Rocket ?</h1>
+        <img class = "spacex-logo" src = "imgs/spacex.png">
+    </div>
+
+    <p style = "margin-top : 3em;text-align:center;">A paragraph is a distinct section of writing, typically a series of sentences that are related and focus on a single main idea.</p>
+    
+    <div class = "search-container">
+        <input class = "search-bar" type = "text" placeholder = "Enter Rocket ID" >
+        <button class = "search-button" style = "padding:0px;">
+            <img src = "imgs/search.png" style = "width:2.6em;height:2.2em;"> 
+        </button>
+        <button class = "add-button">
+            <img src = "imgs/add-btn.png" style = "width:2.1em;height:2.1em;"> 
+        </button>
+    </div>
+
+    <div class = "rockets-container">
+        <table class = "rockets-table" >
+            <thead>
+                <tr class = "table-head">
+                    <td>ID</td>
+                    <td>Status</td>
+                    <td>Current Location</td>
+                    <td>S.T</td>
+                    <td>E.T</td>
+                    <td>Current speed</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+            </thead>
+
+            <tbody>
+                <tr>
+                <td class = "id">NS1001</td>
+                <td class = "status">On Time</td>
+                <td class = "current_loc">100km from Mars</td>
+                <td class = "st">10am</td>
+                <td class = "et">7pm</td>
+                <td class = "speed">1033kmph</td>
+                <td><img class = "location-button" src="imgs/location.png"></td>
+                <td><img class = "pencil-button" src="imgs/pencil.png"></td>
+                <td><img class = "minus-button" src="imgs/minus-button.png"> </td>
+                </tr>
+
+                <tr>
+                <td id="NS1001" class = "id-input">NS1001</td>
+                <td class = "status">On Time</td>
+                <td class = "current_loc">100km from Mars</td>
+                <td class = "st">10am</td>
+                <td class = "et">7pm</td>
+                <td class = "speed">1033kmph</td>
+                <td><img class = "pencil-button" src="imgs/pencil.png"></td>
+                <td><img class = "minus-button" src="imgs/minus-button.png"> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
